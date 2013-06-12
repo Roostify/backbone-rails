@@ -6,9 +6,9 @@
       var data = {}
 
       if(model.paramRoot) {
-        data[model.paramRoot] = model.toJSON();
+        data[model.paramRoot] = model;
       } else {
-        data = model.toJSON();
+        data = model;
       }
 
       options.data = JSON.stringify(data);
